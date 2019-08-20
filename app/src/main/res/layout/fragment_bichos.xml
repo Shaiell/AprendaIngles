@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.BichosFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5E9B9">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/direitos"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageButton
+            android:id="@+id/ibGato"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/gato"
+            app:layout_constraintBottom_toBottomOf="@+id/ibCao"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="@+id/ibCao" />
+
+        <ImageButton
+            android:id="@+id/ibLeao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/leao"
+            app:layout_constraintEnd_toEndOf="@+id/ibCao"
+            app:layout_constraintStart_toStartOf="@+id/ibCao"
+            app:layout_constraintTop_toBottomOf="@+id/ibCao" />
+
+        <ImageButton
+            android:id="@+id/ibMacaco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/macaco"
+            app:layout_constraintBottom_toBottomOf="@+id/ibLeao"
+            app:layout_constraintEnd_toEndOf="@+id/ibGato"
+            app:layout_constraintStart_toStartOf="@+id/ibGato"
+            app:layout_constraintTop_toTopOf="@+id/ibLeao" />
+
+        <ImageButton
+            android:id="@+id/ibOvelha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ovelha"
+            app:layout_constraintEnd_toEndOf="@+id/ibLeao"
+            app:layout_constraintStart_toStartOf="@+id/ibLeao"
+            app:layout_constraintTop_toBottomOf="@+id/ibLeao" />
+
+        <ImageButton
+            android:id="@+id/ibCao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cao"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/ibVaca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/vaca"
+            app:layout_constraintBottom_toBottomOf="@+id/ibOvelha"
+            app:layout_constraintEnd_toEndOf="@+id/ibMacaco"
+            app:layout_constraintStart_toStartOf="@+id/ibMacaco"
+            app:layout_constraintTop_toTopOf="@+id/ibOvelha" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

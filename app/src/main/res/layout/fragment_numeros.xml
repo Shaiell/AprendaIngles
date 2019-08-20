@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.NumerosFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/segundo_fundo">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <ImageButton
+            android:id="@+id/ib2"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dois"
+            app:layout_constraintBottom_toBottomOf="@+id/ib1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="@+id/ib1" />
+
+        <ImageButton
+            android:id="@+id/ib5"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="50dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cinco"
+            app:layout_constraintEnd_toEndOf="@+id/ib3"
+            app:layout_constraintStart_toStartOf="@+id/ib3"
+            app:layout_constraintTop_toBottomOf="@+id/ib3" />
+
+        <ImageButton
+            android:id="@+id/ib1"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/um"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/ib3"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="50dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/tres"
+            app:layout_constraintEnd_toEndOf="@+id/ib1"
+            app:layout_constraintStart_toStartOf="@+id/ib1"
+            app:layout_constraintTop_toBottomOf="@+id/ib1" />
+
+        <ImageButton
+            android:id="@+id/ib4"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/quatro"
+            app:layout_constraintBottom_toBottomOf="@+id/ib3"
+            app:layout_constraintEnd_toEndOf="@+id/ib2"
+            app:layout_constraintStart_toStartOf="@+id/ib2"
+            app:layout_constraintTop_toTopOf="@+id/ib3" />
+
+        <ImageButton
+            android:id="@+id/ib6"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/seis"
+            app:layout_constraintBottom_toBottomOf="@+id/ib5"
+            app:layout_constraintEnd_toEndOf="@+id/ib4"
+            app:layout_constraintStart_toStartOf="@+id/ib4"
+            app:layout_constraintTop_toTopOf="@+id/ib5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
